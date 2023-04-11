@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currency Converter</title>
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/nigtmode.css">
+  <link rel="stylesheet" href="/spinner.css">
+  <link rel="stylesheet" href="/sun.css">
+  <link rel="stylesheet" href="/money.css">
+  <link rel="stylesheet" href="/spacebtn.css">
+  <script type="module" src="/app.js" defer></script>
+  <script type="module" src="config.js"></script>
+
+  
+</head>
+
+<body>
+   
+  <!-- Stater codes -->
+  <!-- Currency 1 -->
+  <div>
+    <div class="title-container">
+       
+          <!-- <h1>Currency Converter</h1> -->
+          <div class="container">
+            <div class="cloud front">
+              <span class="left-front"></span>
+              <span class="right-front"></span>
+            </div>
+            <span class="sun sunshine"></span>
+            <span class="sun"></span>
+            <div class="cloud back">
+              <span class="left-back"></span>
+              <span class="right-back"></span>
+            </div>
+          </div>
+        <h1>Money Converter</h1> 
+        <label for="theme" class="theme">
+            <span class="theme__toggle-wrap">
+                <input id="theme" class="theme__toggle" type="checkbox" role="switch" name="theme" value="dark">
+                <span class="theme__fill"></span>
+                <span class="theme__icon">
+                    <span class="theme__icon-part"></span>
+                    <span class="theme__icon-part"></span>
+                    <span class="theme__icon-part"></span>
+                    <span class="theme__icon-part"></span>
+                    <span class="theme__icon-part"></span>
+                    <span class="theme__icon-part"></span>
+                    <span class="theme__icon-part"></span>
+                    <span class="theme__icon-part"></span>
+                    <span class="theme__icon-part"></span>
+                </span>
+            </span>
+        </label>
+          <!-- <img class="maneki" height="60px" src="https://png.pngtree.com/png-clipart/20201208/original/pngtree-cartoon-cute-illustration-of-lucky-cat-maneki-neko-fortune-cat-vector-png-image_5544915.jpg" alt=""> -->
+      </div>
+      
+      <div class="box-container">
+        
+            <div class="box1">
+                <select id="currency1">
+                    <option sample value="AED">AED</option>
+                    <option sample value="ARS">ARS</option>
+                    <option sample value="AUD">AUD</option>
+                    <option sample value="BRL">BRL</option>
+                    <option sample value="BGN">BGN</option>
+                    <option sample value="BSD">BSD</option>
+                    <option sample value="CAD">CAD</option>
+                    <option sample value="CHF">CHF</option>
+                    <option sample value="CLP">CLP</option>
+                    <option sample value="CNY">CNY</option>
+                    <option sample value="COP">COP</option>
+                    <option sample value="CZK">CZK</option>
+                    <option sample value="DKK">DKK</option>
+                    <option sample value="DOP">DOP</option>
+                    <option sample value="EGP">EGP</option>
+                    <option sample value="EUR">EUR</option>
+                    <option sample value="FJD">FJD</option>
+                    <option sample value="GBP">GBP</option>
+                    <option sample value="GTQ">GTQ</option>
+                    <option sample value="HKD">HKD</option>
+                    <option sample value="HRK">HRK</option>
+                    <option sample value="HUF">HUF</option>
+                    <option sample value="IDR">IDR</option>
+                    <option sample value="ILS">ILS</option>
+                    <option sample value="INR">INR</option>
+                    <option sample value="ISK">ISK</option>
+                    <option sample value="JPY">JPY</option>
+                    <option sample value="KRW">KRW</option>
+                    <option sample value="KZT">KZT</option>
+                    <option sample value="MXN">MXN</option>
+                    <option sample value="MYR">MYR</option>
+                    <option sample value="NOK">NOK</option>
+                    <option sample value="NZD">NZD</option>
+                    <option sample value="PAB">PAB</option>
+                    <option sample value="PHP">PHP</option>
+                    <option sample value="PKR">PKR</option>
+                    <option sample value="PLN">PLN</option>
+                    <option sample value="PYG">PYG</option>
+                    <option sample value="RON">RON</option>
+                    <option sample value="RUB">RUB</option>
+                    <option sample value="SAR">SAR</option>
+                    <option sample value="SEK">SEK</option>
+                    <option sample value="SGD">SGD</option>
+                    <option sample value="THB">THB</option>
+                    <option sample value="TRY">TRY</option>
+                    <option sample value="TWD">TWD</option>
+                    <option sample value="UAH">UAH</option>
+                    <option sample value="USD" selected>USD</option>
+                    <option sample value="UYU">UYU</option>
+                    <option sample value="VND">VND</option>
+                    <option sample value="ZAR">ZAR</option>
+                </select>
+    
+                <!-- INPUT 1 -->
+                <input id="rate" type="number" value="1">
+    
+            </div>
+            
+
+
+            <div class="button-circle">
+            <button id="swap-currency" type="button" class="btn">
+                <strong>
+                    <svg height="40px" id="swap-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M105.1 202.6c7.7-21.8 20.2-42.3 37.8-59.8c62.5-62.5 163.8-62.5 226.3 0L386.3 160H336c-17.7 0-32 14.3-32 32s14.3 32 32 32H463.5c0 0 0 0 0 0h.4c17.7 0 32-14.3 32-32V64c0-17.7-14.3-32-32-32s-32 14.3-32 32v51.2L414.4 97.6c-87.5-87.5-229.3-87.5-316.8 0C73.2 122 55.6 150.7 44.8 181.4c-5.9 16.7 2.9 34.9 19.5 40.8s34.9-2.9 40.8-19.5zM39 289.3c-5 1.5-9.8 4.2-13.7 8.2c-4 4-6.7 8.8-8.1 14c-.3 1.2-.6 2.5-.8 3.8c-.3 1.7-.4 3.4-.4 5.1V448c0 17.7 14.3 32 32 32s32-14.3 32-32V396.9l17.6 17.5 0 0c87.5 87.4 229.3 87.4 316.7 0c24.4-24.4 42.1-53.1 52.9-83.7c5.9-16.7-2.9-34.9-19.5-40.8s-34.9 2.9-40.8 19.5c-7.7 21.8-20.2 42.3-37.8 59.8c-62.5 62.5-163.8 62.5-226.3 0l-.1-.1L125.6 352H176c17.7 0 32-14.3 32-32s-14.3-32-32-32H48.4c-1.6 0-3.2 .1-4.8 .3s-3.1 .5-4.6 1z"/></svg>
+                </strong>
+                <div id="container-stars">
+                  <div id="stars"></div>
+                </div>
+
+                <div id="glow">
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                </div>
+              </button>
+            </div>
+              
+
+            <!-- <div class="button-circle"> -->
+                <!-- <button id="swap-currency"> -->
+                    <!-- <svg height="40px" id="swap-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc.<path d="M105.1 202.6c7.7-21.8 20.2-42.3 37.8-59.8c62.5-62.5 163.8-62.5 226.3 0L386.3 160H336c-17.7 0-32 14.3-32 32s14.3 32 32 32H463.5c0 0 0 0 0 0h.4c17.7 0 32-14.3 32-32V64c0-17.7-14.3-32-32-32s-32 14.3-32 32v51.2L414.4 97.6c-87.5-87.5-229.3-87.5-316.8 0C73.2 122 55.6 150.7 44.8 181.4c-5.9 16.7 2.9 34.9 19.5 40.8s34.9-2.9 40.8-19.5zM39 289.3c-5 1.5-9.8 4.2-13.7 8.2c-4 4-6.7 8.8-8.1 14c-.3 1.2-.6 2.5-.8 3.8c-.3 1.7-.4 3.4-.4 5.1V448c0 17.7 14.3 32 32 32s32-14.3 32-32V396.9l17.6 17.5 0 0c87.5 87.4 229.3 87.4 316.7 0c24.4-24.4 42.1-53.1 52.9-83.7c5.9-16.7-2.9-34.9-19.5-40.8s-34.9 2.9-40.8 19.5c-7.7 21.8-20.2 42.3-37.8 59.8c-62.5 62.5-163.8 62.5-226.3 0l-.1-.1L125.6 352H176c17.7 0 32-14.3 32-32s-14.3-32-32-32H48.4c-1.6 0-3.2 .1-4.8 .3s-3.1 .5-4.6 1z"/></svg> -->
+                  <!-- </button> -->
+            <!-- </div>  -->
+            
+           
+            
+    
+            <!-- Currency 2 -->
+            <div class="box2">
+                <select id="currency2" style=" background-color: white; color: black;">
+                    <option sample value="AED">AED</option>
+                    <option sample value="ARS">ARS</option>
+                    <option sample value="AUD">AUD</option>
+                    <option sample value="BGN">BGN</option>
+                    <option sample value="BRL">BRL</option>
+                    <option sample value="BSD">BSD</option>
+                    <option sample value="CAD">CAD</option>
+                    <option sample value="CHF">CHF</option>
+                    <option sample value="CLP">CLP</option>
+                    <option sample value="CNY">CNY</option>
+                    <option sample value="COP">COP</option>
+                    <option sample value="CZK">CZK</option>
+                    <option sample value="DKK">DKK</option>
+                    <option sample value="DOP">DOP</option>
+                    <option sample value="EGP">EGP</option>
+                    <option sample value="EUR">EUR</option>
+                    <option sample value="FJD">FJD</option>
+                    <option sample value="GBP">GBP</option>
+                    <option sample value="GTQ">GTQ</option>
+                    <option sample value="HKD">HKD</option>
+                    <option sample value="HRK">HRK</option>
+                    <option sample value="HUF">HUF</option>
+                    <option sample value="IDR">IDR</option>
+                    <option sample value="ILS">ILS</option>
+                    <option sample value="INR">INR</option>
+                    <option sample value="ISK">ISK</option>
+                    <option sample value="JPY">JPY</option>
+                    <option sample value="KRW">KRW</option>
+                    <option sample value="KZT">KZT</option>
+                    <option sample value="MXN">MXN</option>
+                    <option sample value="MYR" selected>MYR</option>
+                    <option sample value="NOK">NOK</option>
+                    <option sample value="NZD">NZD</option>
+                    <option sample value="PAB">PAB</option>
+                    <option sample value="PHP">PHP</option>
+                    <option sample value="PKR">PKR</option>
+                    <option sample value="PLN">PLN</option>
+                    <option sample value="PYG">PYG</option>
+                    <option sample value="RON">RON</option>
+                    <option sample value="RUB">RUB</option>
+                    <option sample value="SAR">SAR</option>
+                    <option sample value="SEK">SEK</option>
+                    <option sample value="SGD">SGD</option>
+                    <option sample value="THB">THB</option>
+                    <option sample value="TRY">TRY</option>
+                    <option sample value="TWD">TWD</option>
+                    <option sample value="UAH">UAH</option>
+                    <option sample value="USD">USD</option>
+                    <option sample value="UYU">UYU</option>
+                    <option sample value="VND">VND</option>
+                    <option sample value="ZAR">ZAR</option>
+                </select>
+    
+                <!-- INPUT 2 -->
+                <input id="rate2" type="number" value="0"  style=" background-color: white; color: black;">
+            </div>
+           
+        </div>
+    
+        <div id="history-record">
+            <div>
+                <button id="view-history"> View History</button>
+            </div>
+            <div>
+                <button id="delete-history">Delete History</button>
+            </div>
+        </div>
+     </div>
+ 
+
+
+
+    <div id="track-history">
+        
+
+        <div id="track-history2">
+            <svg id="money-sign" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M416 176c0 97.2-93.1 176-208 176c-38.2 0-73.9-8.7-104.7-23.9c-7.5 4-16 7.9-25.2 11.4C59.8 346.4 37.8 352 16 352c-6.9 0-13.1-4.5-15.2-11.1s.2-13.8 5.8-17.9l0 0 0 0 .2-.2c.2-.2 .6-.4 1.1-.8c1-.8 2.5-2 4.3-3.7c3.6-3.3 8.5-8.1 13.3-14.3c5.5-7 10.7-15.4 14.2-24.7C14.7 250.3 0 214.6 0 176C0 78.8 93.1 0 208 0S416 78.8 416 176zM231.5 383C348.9 372.9 448 288.3 448 176c0-5.2-.2-10.4-.6-15.5C555.1 167.1 640 243.2 640 336c0 38.6-14.7 74.3-39.6 103.4c3.5 9.4 8.7 17.7 14.2 24.7c4.8 6.2 9.7 11 13.3 14.3c1.8 1.6 3.3 2.9 4.3 3.7c.5 .4 .9 .7 1.1 .8l.2 .2 0 0 0 0c5.6 4.1 7.9 11.3 5.8 17.9c-2.1 6.6-8.3 11.1-15.2 11.1c-21.8 0-43.8-5.6-62.1-12.5c-9.2-3.5-17.8-7.4-25.2-11.4C505.9 503.3 470.2 512 432 512c-95.6 0-176.2-54.6-200.5-129zM228 72c0-11-9-20-20-20s-20 9-20 20V86c-7.6 1.7-15.2 4.4-22.2 8.5c-13.9 8.3-25.9 22.8-25.8 43.9c.1 20.3 12 33.1 24.7 40.7c11 6.6 24.7 10.8 35.6 14l1.7 .5c12.6 3.8 21.8 6.8 28 10.7c5.1 3.2 5.8 5.4 5.9 8.2c.1 5-1.8 8-5.9 10.5c-5 3.1-12.9 5-21.4 4.7c-11.1-.4-21.5-3.9-35.1-8.5c-2.3-.8-4.7-1.6-7.2-2.4c-10.5-3.5-21.8 2.2-25.3 12.6s2.2 21.8 12.6 25.3c1.9 .6 4 1.3 6.1 2.1l0 0 0 0c8.3 2.9 17.9 6.2 28.2 8.4V280c0 11 9 20 20 20s20-9 20-20V266.2c8-1.7 16-4.5 23.2-9c14.3-8.9 25.1-24.1 24.8-45c-.3-20.3-11.7-33.4-24.6-41.6c-11.5-7.2-25.9-11.6-37.1-15l-.7-.2c-12.8-3.9-21.9-6.7-28.3-10.5c-5.2-3.1-5.3-4.9-5.3-6.7c0-3.7 1.4-6.5 6.2-9.3c5.4-3.2 13.6-5.1 21.5-5c9.6 .1 20.2 2.2 31.2 5.2c10.7 2.8 21.6-3.5 24.5-14.2s-3.5-21.6-14.2-24.5c-6.5-1.7-13.7-3.4-21.1-4.7V72z"/>
+            </svg>
+            <p>Track conversion:</p>
+            
+        </div>
+       
+    </div>
+
+   
+</body>
+<footer>
+    &copy Aldrich Pinso 2023
+
+    
+</footer>
+
+ <!-- SWAP BUTTON -->
+ <!-- <div class="spinner">
+    <div class="spinner1">
+        Money
+    </div>
+</div> -->
+
+</html>
